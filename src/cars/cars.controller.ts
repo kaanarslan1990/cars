@@ -8,4 +8,9 @@ export class CarsController {
             {make: 'subaru', model: 'outback'},
             {make: 'fiat', model: '123 spider'}];
     }
+
+    @Get('showcase')
+    showcase(@Req() request: Request): string {
+        return 'This is the cars showcase';
+    }
 }
